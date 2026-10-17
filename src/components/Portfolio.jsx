@@ -4,6 +4,7 @@ import skills from '../data/skills'
 import social from '../data/social'
 import './Portfolio.scss'
 
+
 const projects = [
   {
     name: 'Productivity Workspace Dashboard',
@@ -11,25 +12,27 @@ const projects = [
       'A productivity dashboard with a task list, daily planner, Pomodoro timer, and daily goals.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
     live: 'https://productivityworkspace.netlify.app/',
-    github: '',
+    github:
+      'https://github.com/sohamkule/Productivity-dashboard-Glass-Themed',
   },
   {
     name: 'Smart AI Document Q&A System',
     description:
-      'A document question-answering project using retrieval-augmented generation, multilingual support, and an AI fallback.',
+      'A document question-answering system using multi-modal RAG, multilingual support, and an AI fallback.',
     technologies: ['Python', 'Streamlit', 'RAG', 'Gemini API'],
     live: '',
-    github: '',
+    github: 'https://github.com/sohamkule/RAG-system',
   },
   {
     name: 'macOS Portfolio',
     description:
-      'An interactive portfolio experiment built with React, Vite, and SCSS.',
+      'A responsive developer portfolio built with React, Vite, and SCSS.',
     technologies: ['React', 'JavaScript', 'Vite', 'SCSS'],
     live: '',
     github: 'https://github.com/sohamkule',
   },
 ]
+
 
 const Portfolio = () => {
   return (
