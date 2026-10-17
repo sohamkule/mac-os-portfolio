@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://soham-kule-portfolio.netlify.app/sitemap.xml
