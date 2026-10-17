@@ -120,6 +120,10 @@
   line-height: 1.9;
 }
 
+.section-description + .section-description {
+  margin-top: 16px;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;

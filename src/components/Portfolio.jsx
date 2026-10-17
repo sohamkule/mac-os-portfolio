@@ -127,17 +127,29 @@ const Portfolio = () => {
         <p className="hero-location">Based in {profile.location}</p>
       </section>
 
-      <section className="content-section section-container" id="about">
-        <p className="section-label">01 / ABOUT</p>
-        <h2>A little about me</h2>
+      
+<section className="content-section section-container" id="about">
+  <p className="section-label">01 / ABOUT</p>
+  <h2>Building practical solutions through code.</h2>
 
-        <p className="section-description">
-          I'm an aspiring software developer with a foundation in web
-          development and a growing interest in backend systems and AI.
-          I focus on building practical projects, learning through
-          implementation, and improving my problem-solving skills.
-        </p>
-      </section>
+  <p className="section-description">
+    I'm a B.Tech Information Technology graduate with an
+    8.69 CGPA, focused on frontend development using
+    JavaScript and React. Through personal and academic
+    projects, I've explored responsive web interfaces,
+    browser-based productivity tools, and AI-powered
+    document question answering.
+  </p>
+
+  <p className="section-description">
+    I'm currently strengthening my full-stack development
+    skills, including backend APIs and database integration.
+    I'm looking for an entry-level developer opportunity
+    where I can contribute to real projects, learn from
+    experienced engineers, and grow as a software developer.
+  </p>
+</section>
+
 
 
       <section className="content-section section-container" id="education">
