@@ -87,13 +87,19 @@ const Portfolio = () => {
         <h1>
           Hi, I'm <span className="gradient-text">{profile.name}</span>
           <br />
-          I build for the web.
+          React Developer &amp; Problem Solver.
         </h1>
 
         <p className="hero-description">
-          A B.Tech Information Technology graduate focused on frontend
-          development, JavaScript, and React. I enjoy turning ideas into
-          useful, responsive web experiences.
+
+          <p className="hero-description">
+            I'm a B.Tech Information Technology graduate focused on
+            JavaScript and React. I build responsive web applications
+            and practical projects, and I'm looking for an entry-level
+            frontend or full-stack developer opportunity where I can
+            contribute and continue growing.
+          </p>
+
         </p>
 
         <div className="hero-actions">
