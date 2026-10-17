@@ -24,7 +24,7 @@ const profile = {
     },
     {
       degree: 'Diploma in Information Technology',
-      institution: 'GOvernment Polytechnic Thane',
+      institution: 'Government Polytechnic Thane',
       graduation: '2023',
       score: '77%',
       scoreType: 'Percentage',
