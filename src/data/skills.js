@@ -40,4 +40,12 @@ const skills = {
     ],
 }
 
+export const currentlyLearning = [
+  'Advanced React patterns',
+  'Node.js and Express.js',
+  'REST API development',
+  'MongoDB data modeling',
+  'Full-stack application development',
+]
+
 export default skills

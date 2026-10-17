@@ -1,7 +1,7 @@
 
 import profile from '../data/profile'
-import skills from '../data/skills'
 import social from '../data/social'
+import skills, { currentlyLearning } from '../data/skills'
 import './Portfolio.scss'
 
 
@@ -180,6 +180,16 @@ const Portfolio = () => {
               </div>
             </article>
           ))}
+        </div>
+        <div className="learning-section">
+          <h3>Currently Learning</h3>
+          <div className="skill-tags">
+            {currentlyLearning.map((item) => (
+              <span className="skill-tag" key={item}>
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
