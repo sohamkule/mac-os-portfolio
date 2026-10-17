@@ -89,6 +89,13 @@ const Portfolio = () => {
           >
             GitHub <span aria-hidden="true">↗</span>
           </a>
+          <a
+            className="button button-secondary"
+            href={profile.resume}
+            download="Soham_Kule_Resume.pdf"
+          >
+            Download Resume <span aria-hidden="true">↓</span>
+          </a>
         </div>
 
         <p className="hero-location">Based in {profile.location}</p>
