@@ -221,6 +221,64 @@
   font-size: 0.78rem;
 }
 
+
+.education-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-medium);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-card);
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.education-institution {
+  margin-top: 8px;
+  color: var(--text-secondary);
+}
+
+.education-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+
+  span {
+    color: var(--accent-purple);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  small {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 520px) {
+  .education-card {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .education-card h3 {
+    font-size: 1rem;
+  }
+
+  .education-score span {
+    font-size: 1.6rem;
+  }
+}
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

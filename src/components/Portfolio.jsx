@@ -41,6 +41,7 @@ const Portfolio = () => {
 
         <nav className="portfolio-nav" aria-label="Main navigation">
           <a href="#about">About</a>
+          <a href="#education">Education</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
@@ -101,6 +102,27 @@ const Portfolio = () => {
           implementation, and improving my problem-solving skills.
         </p>
       </section>
+
+
+      <section className="content-section section-container" id="education">
+        <p className="section-label">02 / EDUCATION</p>
+        <h2>Education</h2>
+
+        <article className="education-card">
+          <div>
+            <h3>{profile.education.degree}</h3>
+            <p className="education-institution">
+              B.Tech graduate · {profile.education.graduation}
+            </p>
+          </div>
+
+          <p className="education-score">
+            <span>{profile.education.cgpa}</span>
+            <small>CGPA</small>
+          </p>
+        </article>
+      </section>
+
 
       <section className="content-section section-container" id="skills">
         <p className="section-label">02 / SKILLS</p>
