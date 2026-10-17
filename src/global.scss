@@ -1,0 +1,60 @@
+:root {
+    --text-primary: rgba(255, 255, 255, 0.95);
+    --text-secondary: rgba(255, 255, 255, 0.65);
+    --text-muted: rgba(255, 255, 255, 0.4);
+
+    --glass-light: rgba(255, 255, 255, 0.1);
+    --glass-medium: rgba(30, 30, 30, 0.55);
+    --glass-dark: rgba(20, 20, 20, 0.8);
+
+    --border-light: rgba(255, 255, 255, 0.14);
+    --border-dark: rgba(0, 0, 0, 0.25);
+
+    --shadow-small:
+        0 4px 15px rgba(0, 0, 0, 0.2);
+
+    --shadow-medium:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+
+    --shadow-large:
+        0 25px 70px rgba(0, 0, 0, 0.5);
+
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.25s ease;
+    --transition-slow: 0.4s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+
+    background: #000;
+
+    color: var(--text-primary);
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}

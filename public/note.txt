@@ -1,0 +1,244 @@
+/**
+ * @file: profile.config.ts
+ * @author: Soham Sachin Kule
+ * @summary: B.Tech IT graduate focused on building modern web applications
+ *           and exploring AI-powered full-stack development.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "TailwindCSS",
+    "React Router",
+    "GSAP",
+  ],
+
+  backend: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "MongoDB",
+    "Cassandra / AstraDB",
+  ],
+
+  ai_and_data: [
+    "Python",
+    "Gemini API",
+    "LLM Integration",
+    "RAG",
+    "Embeddings",
+    "Pandas",
+    "NumPy",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Vite",
+    "Postman",
+    "Netlify",
+  ]
+};
+
+
+// --------------------------------------------------
+// 2. PROJECT HISTORY
+// --------------------------------------------------
+
+class ProjectHistory {
+
+  /**
+   * PROJECT
+   * Document Retrieval & QA System
+   */
+  public async DocumentRAG(): Promise<ProjectImpact> {
+
+    const stack = [
+      "Python",
+      "PyQt5",
+      "Gemini API",
+      "Cassandra AstraDB",
+      "LangChain"
+    ];
+
+    const features = [
+      "Document Upload",
+      "PDF / DOCX / XLSX / TXT Processing",
+      "Document Chunking",
+      "Embeddings",
+      "Vector Search",
+      "AI-Powered Question Answering"
+    ];
+
+    const architecture =
+      "Documents -> Processing -> Embeddings -> Vector DB -> LLM -> Answer";
+
+    return {
+      stack,
+      features,
+      architecture
+    };
+  }
+
+
+  /**
+   * PROJECT
+   * Digital Gift Website
+   */
+  public DigitalGiftWebsite(): void {
+
+    const stack = [
+      "React.js",
+      "React Router",
+      "Framer Motion",
+      "CSS"
+    ];
+
+    const focus = [
+      "Interactive UI",
+      "Animations",
+      "Responsive Design",
+      "Personalized User Experience"
+    ];
+  }
+
+
+  /**
+   * PROJECT
+   * Hubstaff Directory Rebuild
+   */
+  public HubstaffDirectory(): void {
+
+    const stack = [
+      "React.js",
+      "TailwindCSS",
+      "JavaScript"
+    ];
+
+    const focus = [
+      "Component-Based UI",
+      "Responsive Layouts",
+      "CSS Grid",
+      "Flexbox",
+      "Reusable Components",
+      "API Integration"
+    ];
+  }
+}
+
+
+// --------------------------------------------------
+// 3. CURRENT LEARNING PATH
+// --------------------------------------------------
+
+const currentLearning = {
+
+  frontend: [
+    "Advanced React",
+    "React Hooks",
+    "Context API",
+    "React Hook Form",
+    "Redux Toolkit",
+    "Next.js"
+  ],
+
+  backend: [
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "MongoDB"
+  ],
+
+  development: [
+    "Git & GitHub",
+    "API Integration",
+    "Responsive Design",
+    "Performance Optimization"
+  ],
+
+  ai: [
+    "Generative AI",
+    "LLM Integration",
+    "RAG Systems",
+    "Prompt Engineering"
+  ]
+};
+
+
+// --------------------------------------------------
+// 4. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  [
+    "Chhatrapati Shivaji Maharaj University",
+    "B.Tech Information Technology (8.69 CGPA)"
+  ]
+]);
+
+
+// --------------------------------------------------
+// 5. PROFESSIONAL STATUS
+// --------------------------------------------------
+
+const professionalStatus = {
+
+  status: "Open to Opportunities",
+
+  role: [
+    "Frontend Developer",
+    "React.js Developer",
+    "Full-Stack Developer",
+    "Software Developer"
+  ],
+
+  experience: "0 - 1 Years",
+
+  workPreference: [
+    "Remote",
+    "Hybrid",
+    "On-site"
+  ]
+};
+
+
+// --------------------------------------------------
+// 6. ENGINEERING PHILOSOPHY
+// --------------------------------------------------
+
+const engineeringMindset = {
+
+  frontend:
+    "Build interfaces that are responsive, reusable, and user-focused.",
+
+  backend:
+    "Understand how frontend applications communicate with real services.",
+
+  learning:
+    "Learn by building projects rather than only following tutorials.",
+
+  problemSolving:
+    "Break complex problems into smaller, understandable components.",
+
+  goal:
+    "Become a strong full-stack engineer with practical AI integration skills."
+};
+
+
+export default {
+  TECH_STACK,
+  ProjectHistory,
+  currentLearning,
+  education,
+  professionalStatus,
+  engineeringMindset
+};

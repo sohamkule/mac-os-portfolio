@@ -1,0 +1,494 @@
+.github-window {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    background: #f5f5f7;
+    color: #1d1d1f;
+}
+
+/* ================================
+   Header
+================================ */
+
+.github-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.github-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.github-header p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #6e6e73;
+}
+
+/* ================================
+   GitHub profile button
+================================ */
+
+.github-profile-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    background: rgba(255, 255, 255, 0.8);
+
+    color: #1d1d1f;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        transform 0.18s ease;
+}
+
+.github-profile-link:hover {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.github-profile-link:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   Repository grid
+================================ */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(270px, 1fr));
+
+    gap: 16px;
+
+    align-items: stretch;
+}
+
+/* ================================
+   Repository card
+================================ */
+
+.card {
+    min-width: 0;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.04),
+        0 4px 14px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(0, 0, 0, 0.14);
+
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.06),
+        0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Card content
+================================ */
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    box-sizing: border-box;
+
+    padding: 18px;
+}
+
+/* ================================
+   Repository name
+================================ */
+
+.card h1 {
+    margin: 0 0 9px;
+
+    font-size: 17px;
+    line-height: 1.3;
+
+    font-weight: 650;
+
+    letter-spacing: -0.2px;
+
+    color: #1d1d1f;
+
+    word-break: break-word;
+}
+
+/* ================================
+   Description
+================================ */
+
+.description {
+    margin: 0;
+
+    min-height: 54px;
+
+    font-size: 13px;
+    line-height: 1.55;
+
+    color: #6e6e73;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    overflow: hidden;
+}
+
+/* ================================
+   Technology tags
+================================ */
+
+.tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-top: 16px;
+}
+
+.tag {
+    margin: 0;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    background: #f0f0f2;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    color: #515154;
+
+    font-size: 11px;
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+/* ================================
+   Statistics
+================================ */
+
+.stats {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 16px;
+
+    color: #6e6e73;
+
+    font-size: 12px;
+}
+
+.stats span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ================================
+   Updated date
+================================ */
+
+.updated {
+    margin: 9px 0 0;
+
+    color: #86868b;
+
+    font-size: 11px;
+}
+
+/* ================================
+   Links
+================================ */
+
+.urls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: auto;
+    padding-top: 18px;
+}
+
+.urls a {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding: 0 11px;
+
+    border-radius: 7px;
+
+    background: #1d1d1f;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        background 0.18s ease,
+        transform 0.18s ease;
+}
+
+.urls a:hover {
+    background: #333336;
+    transform: translateY(-1px);
+}
+
+.urls a:active {
+    transform: translateY(0);
+}
+
+/* Live demo gets a lighter appearance */
+
+.urls a:nth-child(2) {
+    background: #e8e8ed;
+    color: #1d1d1f;
+}
+
+.urls a:nth-child(2):hover {
+    background: #dedee3;
+}
+
+/* ================================
+   Loading / Error / Empty states
+================================ */
+
+.github-state {
+    min-height: 240px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    color: #6e6e73;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+.github-state p {
+    margin: 0;
+}
+
+.github-error {
+    color: #6e6e73;
+}
+
+.github-error button {
+    border: 0;
+
+    padding: 8px 14px;
+
+    border-radius: 7px;
+
+    background: #1d1d1f;
+    color: #ffffff;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.18s ease,
+        transform 0.18s ease;
+}
+
+.github-error button:hover {
+    background: #333336;
+    transform: translateY(-1px);
+}
+
+.github-error button:active {
+    transform: translateY(0);
+}
+
+/* ================================
+   Scrollbar
+================================ */
+
+.github-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+.github-window::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.github-window::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+
+    border-radius: 999px;
+}
+
+.github-window::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.28);
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 700px) {
+    .github-window {
+        padding: 16px;
+    }
+
+    .github-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .github-profile-link {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .github-window {
+        padding: 12px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .github-header h2 {
+        font-size: 21px;
+    }
+}
+
+.github-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.github-refresh {
+    width: 32px;
+    height: 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.8);
+
+    color: #1d1d1f;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.18s ease,
+        transform 0.18s ease;
+}
+
+.github-refresh:hover {
+    background: #ffffff;
+    transform: rotate(20deg);
+}
+
+.github-refresh:active {
+    transform: scale(0.94);
+}
+
+.github-refresh:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@media (max-width: 700px) {
+    .github-window {
+        padding: 16px;
+    }
+
+    .github-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .github-header-actions {
+        width: 100%;
+    }
+
+    .github-profile-link {
+        flex: 1;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
