@@ -120,7 +120,7 @@
   line-height: 1.9;
 }
 
-.section-description + .section-description {
+.section-description+.section-description {
   margin-top: 16px;
 }
 
@@ -420,6 +420,7 @@
   font-size: 0.82rem;
 }
 
+
 .contact-section {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -427,7 +428,11 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-large);
   background:
-    radial-gradient(ellipse at 100% 0%, rgba(96, 165, 250, 0.12), transparent 45%),
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(96, 165, 250, 0.12),
+      transparent 45%
+    ),
     var(--bg-secondary);
 
   h2 {
@@ -436,10 +441,18 @@
     letter-spacing: -0.045em;
   }
 
-  .button {
+  .contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
     margin-top: 28px;
   }
+
+  .contact-actions .button {
+    margin-top: 0;
+  }
 }
+  
 
 .social-links {
   flex-wrap: wrap;

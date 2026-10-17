@@ -255,33 +255,63 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className="contact-section section-container" id="contact">
-        <p className="section-label">04 / CONTACT</p>
-        <h2>Let's build something useful.</h2>
-        <p className="section-description">
-          I'm looking for entry-level opportunities where I can contribute,
-          learn from a team, and grow as a developer.
-        </p>
+      
+<section className="contact-section section-container" id="contact">
+  <p className="section-label">04 / CONTACT</p>
 
-        <a
-          className="button button-primary"
-          href={`mailto:${social.email.address}`}
-        >
-          Email me <span aria-hidden="true">↗</span>
-        </a>
+  <h2>Have an opportunity in mind?</h2>
 
-        <div className="social-links">
-          <a href={social.github.url} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          <a href={social.linkedin.url} target="_blank" rel="noreferrer">
-            LinkedIn
-          </a>
-          <a href={social.instagram.url} target="_blank" rel="noreferrer">
-            Instagram
-          </a>
-        </div>
-      </section>
+  <p className="section-description">
+    I'm a B.Tech Information Technology graduate seeking
+    entry-level frontend or full-stack developer opportunities.
+    If you're hiring or would like to discuss a project, I'd
+    be happy to connect.
+  </p>
+
+  <div className="contact-actions">
+    <a
+      className="button button-primary"
+      href={`mailto:${social.email.address}?subject=${encodeURIComponent(
+        'Entry-Level Developer Opportunity'
+      )}`}
+    >
+      Email me <span aria-hidden="true">↗</span>
+    </a>
+
+    <a
+      className="button button-secondary"
+      href={profile.resume}
+      download
+    >
+      Download resume <span aria-hidden="true">↓</span>
+    </a>
+  </div>
+
+  <div className="social-links">
+    <a
+      href={social.github.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub ↗
+    </a>
+
+    <a
+      href={social.linkedin.url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LinkedIn ↗
+    </a>
+
+    <a
+      href={`mailto:${social.email.address}`}
+    >
+      Email ↗
+    </a>
+  </div>
+</section>
+
 
       <footer className="portfolio-footer">
         <p>© {new Date().getFullYear()} {profile.name}</p>
