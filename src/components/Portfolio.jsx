@@ -108,19 +108,22 @@ const Portfolio = () => {
         <p className="section-label">02 / EDUCATION</p>
         <h2>Education</h2>
 
-        <article className="education-card">
-          <div>
-            <h3>{profile.education.degree}</h3>
-            <p className="education-institution">
-              B.Tech graduate · {profile.education.graduation}
-            </p>
-          </div>
+        <div className="education-list">
+          {profile.education.map((item) => (
+            <article className="education-card" key={item.degree}>
+              <div className="education-details">
+                <h3>{item.degree}</h3>
+                <p className="education-institution">{item.institution}</p>
+                <p className="education-year">{item.graduation}</p>
+              </div>
 
-          <p className="education-score">
-            <span>{profile.education.cgpa}</span>
-            <small>CGPA</small>
-          </p>
-        </article>
+              <p className="education-score">
+                <span>{item.score}</span>
+                <small>{item.scoreType}</small>
+              </p>
+            </article>
+          ))}
+        </div>
       </section>
 
 

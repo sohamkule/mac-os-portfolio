@@ -14,11 +14,22 @@ const profile = {
   email: 'sohamkule18@gmail.com',
   resume: '/resume.pdf',
 
-  education: {
-    degree: 'B.Tech in Information Technology',
-    graduation: 'June 2026',
-    cgpa: '8.69',
-  },
+  education: [
+    {
+      degree: 'B.Tech in Information Technology',
+      institution: 'Chhatrapati Shivaji Maharaj University, Panvel',
+      graduation: 'June 2026',
+      score: '8.69',
+      scoreType: 'CGPA',
+    },
+    {
+      degree: 'Diploma in Information Technology',
+      institution: 'GOvernment Polytechnic Thane',
+      graduation: '2023',
+      score: '77%',
+      scoreType: 'Percentage',
+    },
+  ],
 }
 
 export default profile
