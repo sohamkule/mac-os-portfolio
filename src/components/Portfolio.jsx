@@ -5,12 +5,18 @@ import social from '../data/social'
 import './Portfolio.scss'
 
 
+
 const projects = [
   {
     name: 'Productivity Workspace Dashboard',
     description:
-      'A productivity dashboard with a task list, daily planner, Pomodoro timer, and daily goals.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'LocalStorage'],
+      'A browser-based productivity workspace featuring task management, a daily planner, a Pomodoro timer, and daily goals. Uses LocalStorage to preserve data between sessions.',
+    technologies: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'LocalStorage',
+    ],
     live: 'https://productivityworkspace.netlify.app/',
     github:
       'https://github.com/sohamkule/Productivity-dashboard-Glass-Themed',
@@ -18,20 +24,34 @@ const projects = [
   {
     name: 'Smart AI Document Q&A System',
     description:
-      'A document question-answering system using multi-modal RAG, multilingual support, and an AI fallback.',
-    technologies: ['Python', 'Streamlit', 'RAG', 'Gemini API'],
+      'A multilingual document Q&A application using multimodal retrieval-augmented generation (RAG), document context retrieval, and a Wikipedia fallback for additional answers.',
+    technologies: [
+      'Python',
+      'Streamlit',
+      'LangChain',
+      'Gemini API',
+      'Astra DB',
+      'FAISS',
+    ],
     live: '',
     github: 'https://github.com/sohamkule/RAG-system',
   },
   {
-    name: 'macOS Portfolio',
+    name: 'React Developer Portfolio',
     description:
-      'A responsive developer portfolio built with React, Vite, and SCSS.',
-    technologies: ['React', 'JavaScript', 'Vite', 'SCSS'],
+      'A responsive personal portfolio built with React and Vite, featuring reusable UI components, a structured project showcase, responsive styling, and a downloadable resume.',
+    technologies: [
+      'React',
+      'JavaScript',
+      'Vite',
+      'SCSS',
+    ],
     live: '',
-    github: 'https://github.com/sohamkule',
+    github:
+      'https://github.com/sohamkule/mac-os-portfolio',
   },
 ]
+
 
 
 const Portfolio = () => {
